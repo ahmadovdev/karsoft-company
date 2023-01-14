@@ -1,0 +1,26 @@
+/* === Variable Css ===*/
+
+:root {
+  /* === Header height === */
+  --header-height: 64px;
+
+  /* === Font Family === */
+  --biggest-font-size: 48px;
+  --h2-font-size: 34px;
+  --h3-font-size: 20px;
+  --normal-font-size: 16px;
+
+  /* === Font Weight === */
+  --regular-font: 400;
+  --medium-font: 500;
+  --semibold-font: 700;
+
+  /* === Color === */
+  --text-color-light: #fff;
+  --text-color-primary: #222D50;
+  --text-color-secondary: #009846;
+  --text-color-gray: #5C606A;
+
+  /* === z-index === */
+  --z-index: 100;
+}

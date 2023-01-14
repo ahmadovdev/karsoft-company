@@ -1,0 +1,20 @@
+
+* ,::before,::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+h1{
+  font-size: var(--biggest-font-size);
+  font-weight: var(--semibold-font);
+  color: var(--text-color-light);
+  line-height: 70px;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}

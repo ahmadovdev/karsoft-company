@@ -1,0 +1,23 @@
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.button{
+  width: 157px;
+  height: 44px;
+  padding: 10px 23px;
+  font-weight: var(--regular-font);
+  font-size: var(--normal-font-size);
+  background-color: transparent;
+  color: var(--text-color-light);
+  line-height: 19px;
+  border: 1px solid #fff;
+  border-radius: 6px;
+
+  &:hover{
+    background-color: var(--text-color-secondary);
+    border: none;
+    transition: .5s;
+  }
+}

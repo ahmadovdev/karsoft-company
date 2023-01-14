@@ -1,0 +1,26 @@
+/* === Header ===*/
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-index);
+  background: black;
+}
+.nav{
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  &__list{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+  &__link{
+    color: var(--text-color-light);
+    font-weight: var(--regular-font);
+  }
+}
