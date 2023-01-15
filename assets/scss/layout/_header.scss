@@ -1,5 +1,4 @@
 /* === Header ===*/
-
 .header {
   width: 100%;
   position: fixed;
@@ -22,5 +21,16 @@
   &__link{
     color: var(--text-color-light);
     font-weight: var(--regular-font);
+  }
+  &__language{
+    position: relative;
+  }
+  &__select{
+    background-color: #fff;
+    cursor: pointer;
+  }
+  i{
+    color: #fff;
+    position: absolute;
   }
 }

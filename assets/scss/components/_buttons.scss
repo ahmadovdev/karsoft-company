@@ -21,6 +21,8 @@
 
   &:hover{
     background-color: var(--text-color-secondary);
+    border: none;
+    outline: none;
   }
   &__icon,&__text{
     display: flex;

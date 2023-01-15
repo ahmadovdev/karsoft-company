@@ -378,6 +378,8 @@ html, body {
 }
 .button:hover {
   background-color: var(--text-color-secondary);
+  border: none;
+  outline: none;
 }
 .button__icon, .button__text {
   display: flex;
@@ -754,6 +756,17 @@ html, body {
 .nav__link {
   color: var(--text-color-light);
   font-weight: var(--regular-font);
+}
+.nav__language {
+  position: relative;
+}
+.nav__select {
+  background-color: #fff;
+  cursor: pointer;
+}
+.nav i {
+  color: #fff;
+  position: absolute;
 }
 
 /* === Layout === */
