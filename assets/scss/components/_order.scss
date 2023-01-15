@@ -16,21 +16,26 @@
     color: #fff;
     font-weight: var(--semibold-font);
     line-height: 41px;
+    cursor: pointer;
+    &:hover{
+      transition: all ease;
+      color: #c0c0c0;
+    }
   }
   &__name{
     margin-top: 20px;
     font-size: var(--h2-font-size);
-    color: #c0c0c0;
+    color: #fff;
     font-weight: var(--medium-font);
     line-height: 41px;
+    cursor: pointer;
+    &:hover{
+      transition: all ease;
+      color: #c0c0c0;
+    }
   }
   .button{
     margin-top: 52px;
     background-color: var(--text-color-secondary);
-
-    &:hover{
-      background-color: #fff;
-      color: black;
-    }
   }
 }

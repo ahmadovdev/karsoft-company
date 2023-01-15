@@ -3,6 +3,10 @@
   height: 810px;
 }
 .feedback{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   &__name{
     font-size: var(--normal-font-size);
     font-weight: var(--semibold-font);
@@ -34,13 +38,15 @@
     text-align: center;
     color: var(--text-color-primary);
   }
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
   &__description{
     margin-top: 80px;
+  }
+  &__icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: yellow;
   }
   &__carousel{
   width: 820px;

@@ -1,23 +1,41 @@
 .buttons {
   display: flex;
   gap: 10px;
+  position: relative;
 }
-
 .button{
-  width: 157px;
-  height: 44px;
-  padding: 10px 23px;
-  font-weight: var(--regular-font);
-  font-size: var(--normal-font-size);
-  background-color: transparent;
-  color: var(--text-color-light);
-  line-height: 19px;
+  display: flex;
+  height: 50px;
+  padding: 0;
+  background: transparent;
   border: 1px solid #fff;
+  outline: none;
   border-radius: 6px;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #fff;
+  padding: 0px 24px;
+  transition: all .5s ease-in;
 
   &:hover{
     background-color: var(--text-color-secondary);
-    border: none;
-    transition: .5s;
   }
+  &__icon,&__text{
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    height: 100%;
+  }
+  i{
+    font-size: 22px;
+    color: #fff;
+  }
+  img{
+    width: 22px;
+    height: 22px;
+  }
+
 }
+
