@@ -378,7 +378,7 @@ html, body {
 }
 
 .statistics {
-  width: 1440px;
+  width: 1040px;
   height: 149px;
   display: flex;
   justify-content: space-around;
@@ -390,12 +390,11 @@ html, body {
   position: absolute;
   top: 826px;
 }
-
-h2 {
+.statistics__result {
   font-size: var(--h2-font-size);
+  text-align: center;
 }
-
-h3 {
+.statistics__text {
   font-size: var(--h3-font-size);
 }
 
@@ -493,7 +492,7 @@ h3 {
   margin-top: 160px;
 }
 .services__description {
-  width: 860px;
+  width: 460px;
   margin-top: 220px;
 }
 .services__description .button {
@@ -543,7 +542,7 @@ h3 {
 }
 .portfolio__items {
   display: flex;
-  gap: 6rem;
+  gap: 3rem;
   justify-content: space-between;
 }
 .portfolio__item a {
@@ -685,7 +684,7 @@ h3 {
 .nav__list {
   display: flex;
   align-items: center;
-  gap: 5rem;
+  gap: 2rem;
 }
 .nav__link {
   color: var(--text-color-light);
@@ -694,7 +693,7 @@ h3 {
 
 /* === Layout === */
 .container {
-  max-width: 1440px;
+  max-width: 1040px;
   margin: 0 auto;
 }
 

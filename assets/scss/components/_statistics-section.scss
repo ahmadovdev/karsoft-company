@@ -1,5 +1,5 @@
 .statistics{
-  width: 1440px;
+  width: 1040px;
   height: 149px;
   display: flex;
   justify-content: space-around;
@@ -10,10 +10,11 @@
   border-radius: 14px;
   position: absolute;
   top: 826px;
-}
-h2{
-  font-size: var(--h2-font-size);
-}
-h3{
-  font-size: var(--h3-font-size);
+  &__result{
+    font-size: var(--h2-font-size);
+    text-align: center;
+  }
+  &__text{
+    font-size: var(--h3-font-size);
+  }
 }
