@@ -1,0 +1,36 @@
+.order-section{
+  height: 346px;
+  background-image: url(./Rectangle01.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.order{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__header{
+    margin-top: 80px;
+    font-size: var(--h2-font-size);
+    color: #fff;
+    font-weight: var(--semibold-font);
+    line-height: 41px;
+  }
+  &__name{
+    margin-top: 20px;
+    font-size: var(--h2-font-size);
+    color: #c0c0c0;
+    font-weight: var(--medium-font);
+    line-height: 41px;
+  }
+  .button{
+    margin-top: 52px;
+    background-color: var(--text-color-secondary);
+
+    &:hover{
+      background-color: #fff;
+      color: black;
+    }
+  }
+}

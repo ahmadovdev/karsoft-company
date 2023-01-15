@@ -1,0 +1,45 @@
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 167px;
+  
+  &__gmail{
+    font-size: var(--normal-font-size);
+    color: var(--text-color-primary);
+    font-weight: var(--regular-font);
+    margin-bottom: 20px;
+  }
+  &__telephone{
+    font-size: var(--normal-font-size);
+    color: var(--text-color-primary);
+    font-weight: var(--regular-font);
+  }
+  &__name{
+    font-size: var(----h3-font-size);
+    font-weight: var(--medium-font);
+    color: var(--text-color-primary);
+  }
+  &__item{
+    font-size: var(--normal-font-size);
+    color: #5C606A;
+    font-weight: var(--regular-font);
+    margin-top: 20px;
+  }
+  &__icon{
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    margin-top: 23px;
+  }
+  &__bottom{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 96px;
+    background: #009846;
+    color: #fff;
+  }
+}
