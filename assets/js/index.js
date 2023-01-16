@@ -3,7 +3,6 @@
 // Modal Window
 const modalTrigger = document.querySelectorAll("[data-modal]");
 const modal = document.querySelector(".modal-section");
-console.log(modalTrigger);
 
 function closeModal() {
   modal.classList.toggle("show");
@@ -13,7 +12,6 @@ function closeModal() {
 function openModal() {
   modal.classList.toggle("show");
   document.body.style.overflow = "hidden";
-  clearInterval(modalTimer);
 }
 
 modalTrigger.forEach((item) => {
@@ -26,20 +24,40 @@ modal.addEventListener("click", (e) => {
   }
 });
 
-const modalTimer = setTimeout(openModal, 5000);
+// Portfolio navbar
 
-// for Scroll
-
-function showModalByScroll() {
-  if (
-    window.pageYOffset + document.documentElement.clientHeight >=
-    document.documentElement.scrollHeight
-  ) {
-    openModal();
-    window.removeEventListener("scroll", showModalByScroll);
-  }
+const navParent = document.querySelector(".portfolio__items"),
+  navItem = document.querySelectorAll(".portfolio__item"),
+  navContent = document.querySelectorAll(".portfolio-cards_parent");
+console.log(navContent);
+function hideNavContent() {
+  navContent.forEach((item) => {
+    item.classList.add("hide");
+    item.classList.remove("show");
+  });
+  navItem.forEach((item) => {
+    item.classList.remove("portfolio__active");
+  });
 }
 
-window.addEventListener("scroll", showModalByScroll);
 
-// Portfolio navbar
+function showNavContent(i = 0) {
+  navContent[i].classList.add("show" , 'fade');
+  navContent[i].classList.remove("hide");
+  navItem[i].classList.add("portfolio__active");
+}
+
+hideNavContent();
+showNavContent();
+
+navParent.addEventListener("click", () => {
+  const target = event.target;
+  if (target && target.classList.contains("portfolio__item")) {
+    navItem.forEach((item, idx) => {
+      if (target === item) {
+        hideNavContent();
+        showNavContent(idx);
+      }
+    });
+  }
+});

@@ -572,15 +572,14 @@ html, body {
   gap: 3rem;
   justify-content: space-between;
 }
-.portfolio__item a {
+.portfolio__item {
   font-size: var(--normal-font-size);
   color: var(--text-color-primary);
   font-weight: var(--medium-font);
+  cursor: pointer;
 }
-.portfolio__item a:hover {
+.portfolio__item .active {
   color: var(--text-color-secondary);
-  transition: 0.5s;
-  text-decoration: underline;
 }
 .portfolio__cards {
   margin-top: 57px;

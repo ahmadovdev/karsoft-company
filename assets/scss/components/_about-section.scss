@@ -1,12 +1,18 @@
 @use '../components/buttons.scss';
 
+
 .about{
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 200px;
-  margin-bottom: 80px;
-  
+  padding-bottom: 80px;
+  &-me {
+    background-image: url("../img/Group.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
   &__description{
     width: 700px;
   }
