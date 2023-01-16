@@ -16,21 +16,19 @@
   &__list{
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 6rem;
 }
   &__link{
     color: var(--text-color-light);
     font-weight: var(--regular-font);
+  &:hover{
+    color: var(--text-color-secondary);
+    transition: all ease-in;
   }
-  &__language{
-    position: relative;
   }
   &__select{
     background-color: #fff;
     cursor: pointer;
   }
-  i{
-    color: #fff;
-    position: absolute;
-  }
+  
 }

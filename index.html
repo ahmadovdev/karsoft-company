@@ -34,17 +34,10 @@
           <li class="nav__item">
             <span class="nav__link">+998 (99) 001-05-05</span>
           </li>
-          <div class="nav__lang">
-            <span class="nav__langIcon">
-              <i class="fa-solid fa-globe"></i>
-            </span>
-            <span class="nav__language">
-              <select class="nav__select" name="language" id="language">
-                <option value="uz">UZ</option>
-                <option value="ru">RU</option>
-              </select>
-            </span>
-          </div>
+          <select class="nav__select" name="language" id="language">
+            <option value="uz">uz</option>
+            <option value="ru">ru</option>
+          </select>
         </ul>
       </div>
     </nav>
@@ -57,7 +50,7 @@
         <h1>Morbi nibh adipiscing malesuada pharetra sodales est.</h1>
         <div class="buttons">
           <button class="button">
-            <span class="button__text">Bog'lanish</span>
+            <span data-modal class="button__text">Bog'lanish</span>
              <span class="button__icon"><img src="./assets/img/vectorbtn.png" alt=""></span>
           </button>
           <button class="button">
@@ -118,7 +111,7 @@
           <h2>Zamonaviy axborot texnologiyalar biznesingizni rivojlantiradi </h2>
           <p>Morbi nibh adipiscing malesuada pharetra sodales est. Rhoncus sollicitudin et etiam a. Vitae ullamcorper sit magnis orci pellentesque ipsum tellus. Tempus sed id lectus lacus, integer purus, amet pulvinar vitae...</p>
           <button class="button">
-            <span class="button__text">Bog'lanish</span>
+            <span data-modal class="button__text">Bog'lanish</span>
              <span class="button__icon"><img src="./assets/img/vectorbtn.png" alt=""></span>
           </button>
         </div>
@@ -160,12 +153,12 @@
           </div>
         </div>
         <div class="services__description">
-          <h4>XIZMATLARIMIZ</h4>
-        <h2>Bizning xizmatlarimiz
+          <h4 class="services__name">XIZMATLARIMIZ</h4>
+        <h2 class="services__header">Bizning xizmatlarimiz
           O’z ichiga oladi.</h2>
         <p>Morbi nibh adipiscing malesuada pharetra sodales est. Rhoncus sollicitudin et etiam a. Vitae ullamcorper sit magnis orci pellentesque ipsum tellus. Tempus sed id lectus lacus, integer purus, amet pulvinar vitae...</p>
         <button class="button">
-          <span class="button__text">Bog'lanish</span>
+          <span data-modal class="button__text">Bog'lanish</span>
            <span class="button__icon"><img src="./assets/img/vectorbtn.png" alt=""></span>
         </button>
         </div>
@@ -324,7 +317,7 @@
           <h5 class="vakansiya__item"><img class="vakansiya__line" src="./assets/scss/components/Line.png" alt="line">Marketolog</h5>
           <h5 class="vakansiya__item"><img class="vakansiya__line" src="./assets/scss/components/Line.png" alt="line">Grafik dizayner</h5>
           <button class="button">
-            <span class="button__text">Bog'lanish</span>
+            <span data-modal class="button__text">Bog'lanish</span>
              <span class="button__icon"><img src="./assets/img/vectorbtn.png" alt=""></span>
           </button>
         </div>
@@ -342,9 +335,40 @@
         <h2 class="order__header">Sizda biron bir loyihangiz bormi ?</h2>
         <h2 class="order__name">Uni professionallar ishoning!</h2>
         <button class="button">
-          <span class="button__text">Bog'lanish</span>
+          <span data-modal class="button__text">Bog'lanish</span>
            <span class="button__icon"><img src="./assets/img/vectorbtn.png" alt=""></span>
         </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Section -->
+  <section class="modal-section">
+    <div class="container">
+      <div class="modal">
+        <div class="modal__content">
+          <form action="#">
+            <div data-close class="modal__close">&times;</div>
+            <div class="modal__title">
+              <p>Biz imkon qadar tezroq siz bilan bog'lanamiz!</p>
+            </div>
+            <input
+            required
+            placeholder="Ismingiz"
+            name="name"
+            type="text"
+            class="modal__input"
+          />
+          <input
+            required
+            placeholder="Telefon raqamingiz"
+            name="phone"
+            type="phone"
+            class="modal__input"
+          />
+          <button class="button modal__button">Bog'lanish</button>
+          </form>
+        </div>
       </div>
     </div>
   </section>
@@ -395,5 +419,8 @@
       </div>
     </section>
   </footer>
+
+  <!--  Javascript File -->
+  <script src="./assets/js/index.js"></script>
 </body>
 </html>

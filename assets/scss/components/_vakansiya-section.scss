@@ -6,6 +6,9 @@
   display: flex;
   justify-content: space-between;
   margin-top: 100px;
+  &__description{
+    width: 700px;
+  }
   &__name{
     color: var(--text-color-secondary);
     font-size: var(--normal-font-size);
@@ -30,5 +33,9 @@
   .button{
     background-color: var(--text-color-secondary);
     margin-top: 30px;
+  }
+  &__img{
+    width: 520px;
+    height: 460px;
   }
 }
