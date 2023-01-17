@@ -8,6 +8,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   <!-- Css file link -->
   <link rel="stylesheet" href="assets/css/style.css">
+  <!-- splide css file -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
   <!-- Font Awesome Link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Karsoft</title>
@@ -16,7 +18,9 @@
   <!-- Header Section -->
   <header class="header" id="header">
     <nav class="nav container">
-      <img src="./assets/img/karsoft-png-1.png" alt="logo">
+      <div class="nav__imgbox">
+        <img class="nav__img" src="./assets/img/karsoft-png-1.png" alt="logo">
+      </div>
       <div class="nav__menu">
         <ul class="nav__list">
           <li class="nav__item">
@@ -102,7 +106,7 @@
     </div>
   </section>
 
-  <!-- About-Me Section -->
+  <!-- About-As Section -->
   <section class="about-me">
     <div class="container">
       <div class="about">
@@ -115,8 +119,8 @@
              <span class="button__icon"><img src="./assets/img/vectorbtn.png" alt=""></span>
           </button>
         </div>
-        <div class="about__img">
-          <img src="./assets/img/rectangle-52.png" alt="image">
+        <div class="about__imgbox">
+          <img class="about__img" src="./assets/img/rectangle-52.png" alt="image">
         </div>
       </div>
     </div>
@@ -445,17 +449,83 @@
           <h4 class="feedback__name">Feedback</h4>
           <h2 class="feedback__header">Biz haqimizda nima deyishadi</h2>
         </div>
-        <div class="feedback__carousel">
-          <h3 class="feedback__text">Imperdiet tortor elit lacus venenatis nulla semper. Elementum nibh quis porta consequat, lacinia nunc a lacus, mattis. Cursus eu eget ridiculus at pellentesque in tempor arcu scelerisque. Eros tristique rhoncus blandit nulla rutrum pellentesque ut ac tellus. At blandit nunc nibh egestas lacinia massa magnis </h3>
-          <div class="feedback__icon">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
+        <div class="feedback__slides">
+          <div class="splide">
+            <div class="splide__track">
+              <div class="splide__list">
+                <div class="splide__slide">
+                  <div class="feedback__carousel">
+                    <h3 class="feedback__text">Imperdiet tortor elit lacus venenatis nulla semper. Elementum nibh quis porta consequat, lacinia nunc a lacus, mattis. Cursus eu eget ridiculus at pellentesque in tempor arcu scelerisque. Eros tristique rhoncus blandit nulla rutrum pellentesque ut ac tellus. At blandit nunc nibh egestas lacinia massa magnis </h3>
+                    <div class="feedback__icon">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="feedback__author">Abdulaziz Abdinazarov</h5>
+                    <h6 class="feedback__job">Design group. Art direktor</h6>
+                  </div>
+                </div>
+                <div class="splide__slide">
+                  <div class="feedback__carousel">
+                    <h3 class="feedback__text">Imperdiet tortor elit lacus venenatis nulla semper. Elementum nibh quis porta consequat, lacinia nunc a lacus, mattis. Cursus eu eget ridiculus at pellentesque in tempor arcu scelerisque. Eros tristique rhoncus blandit nulla rutrum pellentesque ut ac tellus. At blandit nunc nibh egestas lacinia massa magnis </h3>
+                    <div class="feedback__icon">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="feedback__author">Zakarya Muratbaev</h5>
+                    <h6 class="feedback__job">Frontend Developer (Epam)</h6>
+                  </div>
+                </div>
+                <div class="splide__slide">
+                  <div class="feedback__carousel">
+                    <h3 class="feedback__text">Imperdiet tortor elit lacus venenatis nulla semper. Elementum nibh quis porta consequat, lacinia nunc a lacus, mattis. Cursus eu eget ridiculus at pellentesque in tempor arcu scelerisque. Eros tristique rhoncus blandit nulla rutrum pellentesque ut ac tellus. At blandit nunc nibh egestas lacinia massa magnis </h3>
+                    <div class="feedback__icon">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="feedback__author">Shakhzod Akhmadov</h5>
+                    <h6 class="feedback__job">Frontend Developer</h6>
+                  </div>
+                </div>
+                <div class="splide__slide">
+                  <div class="feedback__carousel">
+                    <h3 class="feedback__text">Imperdiet tortor elit lacus venenatis nulla semper. Elementum nibh quis porta consequat, lacinia nunc a lacus, mattis. Cursus eu eget ridiculus at pellentesque in tempor arcu scelerisque. Eros tristique rhoncus blandit nulla rutrum pellentesque ut ac tellus. At blandit nunc nibh egestas lacinia massa magnis </h3>
+                    <div class="feedback__icon">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="feedback__author">Jakhongir Rahmanov</h5>
+                    <h6 class="feedback__job">Amazon. Backend Developer</h6>
+                  </div>
+                </div>
+                <div class="splide__slide">
+                  <div class="feedback__carousel">
+                    <h3 class="feedback__text">Imperdiet tortor elit lacus venenatis nulla semper. Elementum nibh quis porta consequat, lacinia nunc a lacus, mattis. Cursus eu eget ridiculus at pellentesque in tempor arcu scelerisque. Eros tristique rhoncus blandit nulla rutrum pellentesque ut ac tellus. At blandit nunc nibh egestas lacinia massa magnis </h3>
+                    <div class="feedback__icon">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="feedback__author">Abdulaziz Abdinazarov</h5>
+                    <h6 class="feedback__job">Design group. Art direktor</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <h5 class="feedback__author">Abdulaziz Abdinazarov</h5>
-          <h6 class="feedback__job">Design group. Art direktor</h6>
         </div>
       </div>
     </div>
@@ -535,7 +605,8 @@
   <footer>
     <section class="footer-section">
       <div class="container">
-        <div class="footer">
+       <div class="footer">
+        <div class="footer__parent">
           <div class="footer_left">
             <img src="./assets/img/logo mater.png" alt="logo">
             <p class="footer__gmail"> <i class="fa-regular fa-envelope"></i>  karsoft_group@gmail.com</p>
@@ -571,14 +642,17 @@
             </div>
           </div>
         </div>
+       </div>
       </div>
       <div class="footer__bottom">
-        <p class="footer__end">2020 Copyright all right reserved - Karsoft</p>
+        <p class="footer__end">2022 Copyright all right reserved - Karsoft</p>
       </div>
     </section>
   </footer>
 
+  <!-- Splide cdnjs -->
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
   <!--  Javascript File -->
-  <script src="./assets/js/index.js"></script>
+  <script defer src="./assets/js/script.js"></script>
 </body>
 </html>

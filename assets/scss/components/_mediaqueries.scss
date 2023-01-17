@@ -1,0 +1,115 @@
+@media screen and (max-width: 768px) {
+  // Header Section
+  .header{
+    max-width: 768px;
+    display: flex;
+    justify-content: center;
+  }
+  .nav{
+    &__menu{
+      display: none;
+    }
+    }
+
+    // Main Section
+    .main{
+      &-description{
+      padding: 0 52px;
+       width: 762px;
+      }
+    }
+
+    //Statistics Section
+    .statistics{
+      width: 768px;
+    }
+    
+    // About-As Section
+    .about{
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+    }
+
+    // Services Section
+    .services-section{
+      height: 930px;
+      background: #f6f6f6;
+    }
+    .services{
+      display: flex;
+      flex-direction: column-reverse;
+      &__card{
+        padding-top: 30px;
+      }
+      &__cards{
+        display: flex;
+      }
+      &__cardd{
+        padding-top: 10px;
+      }
+      &__description{
+        padding-top: 10px;
+        width: 500px;
+      }
+      .button{
+        margin-top: 10px;
+      }
+    }
+
+    // Portfolio Section
+    .portfolio-section{
+      display: flex;
+      justify-content: center;
+    }
+    .portfolio{
+      height: 1100px;
+      &__navbars{
+        display: none;
+      }
+      &__navbar{
+        margin-top: 10px;
+      }
+      &__cards{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        padding-top: 10px;
+      }
+    }
+
+    // Feedback Section
+    .feedback{
+      .splide{
+        width: 700px;
+      }
+    }
+
+    // Vakansiya Section
+    .vakansiya-section{
+      height: 1100px;
+      display: flex;
+      justify-content: center;
+    }
+    .vakansiya{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 15px;
+      &__description{
+        width: 500px;
+      }
+      .button{
+        margin-top: 8px;
+      }
+    }
+    // Footer Section
+    .footer{
+      display: flex;
+      justify-content: center;
+      padding: 0 250px;
+      &__parent{
+        display: flex;
+        flex-direction: column;
+     }
+    }
+  }

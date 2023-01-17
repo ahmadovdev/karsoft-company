@@ -48,8 +48,8 @@
     align-items: center;
     color: yellow;
   }
-  &__carousel{
-  width: 820px;
+  .splide{
+  width: 800px;
   height: 415px;
   margin-top: 83px;
   padding: 60px 55px;
@@ -58,4 +58,5 @@
   box-shadow: 0px 8px 14px rgba(0, 152, 70, 0.1);
   border-radius: 48px 6px;
   }
+  
 }

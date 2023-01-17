@@ -40,9 +40,8 @@ function hideNavContent() {
   });
 }
 
-
 function showNavContent(i = 0) {
-  navContent[i].classList.add("show" , 'fade');
+  navContent[i].classList.add("show", "fade");
   navContent[i].classList.remove("hide");
   navItem[i].classList.add("portfolio__active");
 }
@@ -61,3 +60,11 @@ navParent.addEventListener("click", () => {
     });
   }
 });
+
+// Carousel
+var splide = new Splide( '.splide', {
+  perPage: 1,
+  rewind : true,
+} );
+
+splide.mount(); 
