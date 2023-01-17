@@ -45,7 +45,7 @@
     width: 245px;
     height: 294px;
     padding: 15px;
-    margin-top: 10px; //hozircha
+    margin-top: 20px; //hozircha
     background-color: #fff;
     border-radius: 14px;
 
@@ -61,14 +61,14 @@
     row-gap: 20px;
   }
   &__cardd{
-    margin-top: 80px;
+    padding-top: 80px;
   }
   &__card{
-    margin-top: 160px;
+    padding-top: 160px;
   }
   &__description{
     width: 700px;
-    margin-top: 220px;
+    padding-top: 220px;
   .button{
     margin-top: 53px;
     background-color: #009846;

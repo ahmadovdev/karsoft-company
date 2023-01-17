@@ -7,7 +7,7 @@
     font-weight: var(--semibold-font);
   }
   &__name{
-    margin-bottom: 10px;
+    padding-bottom: 10px;
     font-size: var(--normal-font-size);
     font-weight: var(--semibold-font);
     color: var(--text-color-secondary);
@@ -38,7 +38,7 @@
     color: var(--text-color-secondary);
   }
   &__cards{
-    margin-top: 57px;
+    padding-top: 57px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 20px;
