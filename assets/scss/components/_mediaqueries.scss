@@ -1,4 +1,8 @@
 @media screen and (max-width: 768px) {
+  .container{
+    max-width: 768px;
+    margin: 0 auto;
+  }
   // Header Section
   .header{
     max-width: 768px;
@@ -9,7 +13,7 @@
     &__menu{
       display: none;
     }
-    }
+  }
 
     // Main Section
     .main{
@@ -44,13 +48,15 @@
       }
       &__cards{
         display: flex;
+        justify-content: center;
       }
       &__cardd{
         padding-top: 10px;
       }
       &__description{
         padding-top: 10px;
-        width: 500px;
+        width: 700px;
+        margin: 0 auto;
       }
       .button{
         margin-top: 10px;
@@ -111,5 +117,157 @@
         display: flex;
         flex-direction: column;
      }
+     &__item{
+      margin-top: 2px;
+     }
+    }
+}
+
+@media screen and (max-width: 510px) {
+  .container{
+    max-width: 510px;
+    margin: 0 auto;
+  }
+  // Header Section
+  .header{
+    max-width: 510px;
+    display: flex;
+    justify-content: center;
+  }
+  .nav{
+    &__menu{
+      display: none;
     }
   }
+
+    // Main Section
+    .main{
+      &-description{
+      padding: 0 52px;
+       width: 500px;
+      }
+    }
+
+    //Statistics Section
+    .statistics{
+      width: 510px;
+    }
+    
+    // About-As Section
+    .about{
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      &__description{
+        width: 450px;
+      }
+      &__img{
+        width: 430px;
+      }
+    }
+
+    // Services Section
+    .services-section{
+      height: 1600px;
+      background: #f6f6f6;
+    }
+    .services{
+      display: flex;
+      flex-direction: column-reverse;
+      &__card{
+       padding-top: 10px;
+      }
+      &__cards{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+      }
+      &__cardd{
+        padding-top: 10px;
+      }
+      &__description{
+        padding-top: 10px;
+        width: 450px;
+        margin: 0 auto;
+      }
+      .button{
+        margin-top: 10px;
+      }
+    }
+
+    // Portfolio Section
+    .portfolio-section{
+      display: flex;
+      justify-content: center;
+    }
+    .portfolio{
+      height: 1000px;
+      &__navbars{
+        display: none;
+      }
+      &__navbar{
+        width: 450px;
+        margin: 0 auto;
+      }
+      &__cards{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        padding-top: 10px;
+      }
+    }
+
+    // Feedback Section
+    .feedback{
+      .splide{
+        height: 500px;
+        width: 500px;
+      }
+    }
+
+    // Vakansiya Section
+    .vakansiya-section{
+      height: 1000px;
+      display: flex;
+      justify-content: center;
+    }
+    .vakansiya{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 15px;
+      &__description{
+        width: 450px;
+        margin: 0 auto;
+      }
+      &__imgbox{
+        width: 500px;
+        margin: 0 auto;
+      }
+      .button{
+        margin-top: 8px;
+      }
+    }
+
+    // Order Section
+    .order{
+      width: 510px;
+      &__header{
+        width: 460px;
+        margin: 0 auto;
+      }
+    }
+    // Footer Section
+    .footer{
+      display: flex;
+      justify-content: center;
+      padding: 0 250px;
+      &__parent{
+        display: flex;
+        flex-direction: column;
+     }
+     &__item{
+      margin-top: 2px;
+     }
+    }
+}
